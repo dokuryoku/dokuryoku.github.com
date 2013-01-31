@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: http://hdenk.github.com/sitemap.xml

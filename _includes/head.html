@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="page_id" content="{{ page.id }}"/>
+	<title>{{ site.main_title }} - {{ page.title }}</title>
+	{% if page.description %}
+	<meta name="description" content="{{page.description}}">
+	{% else %}
+	<meta name="description" content="{{site.description}}">
+	{% endif %}
+	<meta name="author" content="Helmut Denk">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/css/skeleton.css">
+	<link rel="stylesheet" href="/css/layout.css">
+	<link rel="stylesheet" href="/css/pygments.css">
+	<link rel="shortcut icon" href="/images/favicon.ico">
+        <link rel="alternate" type="application/atom+xml" title="hdenk.github.com feed" href="http://hdenk.github.com/atom.xml" />
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% include tracking.html %}
+</head>
+<body>
+	<div class="container">

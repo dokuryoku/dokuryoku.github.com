@@ -1,0 +1,11 @@
+{% include head.html %}
+<div class="eleven columns alpha">
+	<div id="main" role="main">
+		<article>
+			<h1>{{ page.title }}<span class="post-date">{{ page.date || date_to_string }}</span></h1>
+			{{ content }}
+		</article>
+	</div>
+</div>
+{% include sidebar.html %}
+{% include footer.html %}

@@ -1,0 +1,30 @@
+---
+layout: default
+title: Hauptseite
+---
+<p>
+<blockquote>The Empires of the future are empires of the mind <code>[Winston Churchill]</code></blockquote>
+</p>
+<h2 class="sub-heading" id="writings">Blog Posts</h2>
+<ul class="posts">
+	{% for post in site.posts %}
+	<li>
+		<h3>
+		    <a href="{{ post.url }}">{{ post.title }}</a>
+		    <span class="post-date">{{ post.date | date_to_string }}</span>
+		</h3>
+	</li>
+	{% endfor %}
+</ul>
+
+<!-- Pagination links 
+<h2>Sonstige Links</h2>
+  <ul class="posts">
+    <li>
+      <h3>
+        <a target="_blank" href="http://change-me.html">?</a>
+        <span class="post-meta">Article for Straight Up Search </span>
+      </h3>
+    </li>
+  </ul>
+-->
