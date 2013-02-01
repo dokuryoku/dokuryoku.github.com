@@ -4,14 +4,14 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Helmut Denk</title>
+ <title>独力で</title>
  <link href="http://hdenk.github.com/atom.xml" rel="self"/>
  <link href="http://hdenk.github.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://hdenk.github.com/</id>
  <author>
-   <name>Helmut Denk</name>
-   <email>helmut.denk@gmx.de</email>
+   <name>dokuryoku</name>
+   <email>dokuryoku@gmx.de</email>
  </author>
 
  {% for post in site.posts %}
