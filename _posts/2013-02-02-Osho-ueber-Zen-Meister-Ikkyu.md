@@ -1,0 +1,28 @@
+---
+layout: post
+description: "Osho über Zen-Meister-Ikkyu"
+title: "Osho über Zen-Meister-Ikkyu"
+---
+
+[Ikkyu](http://de.wikipedia.org/wiki/Ikky%C5%AB) is one of the greatest masters, a very rare, revolutionary, nonconformist. Once he stayed in a temple. The night was very cold and there were three wooden Buddhas in the temple, so he burned one Buddha to warm himself. The priest became aware -- he was fast asleep, it was in the middle of the night and the night was very cold -- he became aware that something was going on, so he looked.
+
+Buddha was burning! -- and this man Ikkyu was sitting, happy, warming his hands. The priest became mad; he said, "What are you doing? Are you a madman? -- and I thought you to be a Buddhist monk, that's why I allowed you to stay in the temple. And you have done the most sacrilegious act."
+Ikkyu looked at the priest and said, "But the buddha within me was feeling very cold. So it was a question whether to sacrifice the living Buddha to the wooden one, or to sacrifice the wooden one to the living one. And I decided for life."
+
+But the priest was so mad with anger, he couldn't listen to what Ikkyu was saying. He said, "You are a madman. You simply get out of here! You have burned Buddha."
+
+So Ikkyu started to poke the burned Buddha -- ashes were there, the statue was almost completely finished. He started to poke with a stick. The priest asked, "What are you doing?"
+He said, "I am trying to find the bones of Buddha."
+
+So the priest laughed, he said, "You are either a fool or a madman. And you are absolutely mad! You cannot find bones there, because it is just a wooden Buddha."
+
+Ikkyu laughed, he said, "Then bring the other two. The night is still very cold and the morning is still far away."
+
+This Ikkyu was a very rare man. He was turned out immediately, out of the temple. In the morning he was sitting just on the side of the street outside the temple -- worshipping a milestone, putting flowers, doing his prayers. So the priest said, "You fool! In the night you misbehaved with Buddha. What have you done? You have committed a sin, and now what are you doing with this milestone? This is not a statue."
+
+Ikkyu said, "When you want to pray, everything is a statue. At that time the buddha within was feeling very cold. At this time the buddha within is feeling very prayerful."
+
+This man Ikkyu had thousands of disciples all over the country, and he used to wander from one place to another to help disciples.
+
+Source - Osho Book "No Water, No Moon"
+
