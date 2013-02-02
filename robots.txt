@@ -1,3 +1,3 @@
 User-Agent: *
 Allow: /
-Sitemap: http://hdenk.github.com/sitemap.xml
+Sitemap: http://dokuryoku.github.com/sitemap.xml
