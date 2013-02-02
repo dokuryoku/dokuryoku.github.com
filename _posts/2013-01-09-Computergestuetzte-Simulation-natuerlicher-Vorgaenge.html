@@ -1,7 +1,7 @@
 ---
 layout: post
 description: "Beispiele für die computergestützte Simulation natürlicher Vorgänge"
-title: "Computergestützte Simulation natürlicher Vorgänge"
+title: "Computergestützte Simulation natürlicher Vorgänge I"
 ---
 
 <p>Ende letzten Jahres habe ich mich ein wenig mit dem Buch <a href="http://natureofcode.com/book">The Nature of Code</a> 
@@ -9,7 +9,8 @@ von Daniel Shiffman beschäftigt und einige der Processing-Code-Beispiele in Clo
 <a href="https://github.com/quil/quil">Quil</a> von Sam Aaron verwendet. Quil ist ein in Clojure programmierter Wrapper für
 Java-based Processing und macht das Programmieren von <a href="processing.org">Processing</a> in pure Clojure möglich.</p>
 
-<p>Ich habe ca. 10 der Code-Samples in Clojure implementiert und will hier 2 davon kurz beschreiben.</p>
+<p>Ich habe ca. 10 der Code-Samples in Clojure implementiert und will in separaten Posts zwei oder drei davon beschreiben. 
+Hier das Erste:</p> 
   
 
 <h2>Fluid Resistance</h2>
@@ -23,6 +24,8 @@ von Schwerkraft und Fluid Resistance auf Körper mit unterschlicher Masse.</p>
   Video not playing? <a href="/videos/fluideresistance.mp4">Download file</a> instead.
 </video> 
 
+<p/>
+
 <p>Das Programm besteht aus 3 Hauptteilen: Mover, Fluid und Processing-Main. Es werden Clojure Protocols zur Formulierung 
 der Abstraktionen verwendet.</p>
 
@@ -32,7 +35,7 @@ der Abstraktionen verwendet.</p>
 <script src="https://gist.github.com/4688586.js?file=mover.clj"></script>
 
 <p>Die Datenstruktur <code>Fluid</code> repräsentiert eine im 2D-Raum statisch montierte Flüssigkeit. Für Fluide sind
-die Protokolle <code>Permeable</code> <code>Drawable</code> implementiert.</p>
+die Protokolle <code>Permeable</code> und <code>Drawable</code> implementiert.</p>
 
 <script src="https://gist.github.com/4688586.js?file=fluid.clj"></script>
 
@@ -44,5 +47,5 @@ und den Draw-Loop und die Maushandler.</p>
 <h2>Links</h2>
 
 <ul>
-<li>Es gibt eine Videoserie zu The Nature of Code http://vimeo.com/channels/464686</li>
+<li>Es gibt eine Videoserie zu The Nature of Code <a href="http://vimeo.com/channels/464686">http://vimeo.com/channels/464686</a></li>
 </ul>
