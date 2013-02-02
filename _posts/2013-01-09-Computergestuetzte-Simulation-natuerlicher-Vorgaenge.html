@@ -7,14 +7,15 @@ title: "Computergestützte Simulation natürlicher Vorgänge"
 <p>Ende letzten Jahres habe ich mich ein wenig mit dem Buch <a href="http://natureofcode.com/book">The Nature of Code</a> 
 von Daniel Shiffman beschäftigt und einige der Processing-Code-Beispiele in Clojure übersetzt. Dabei habe ich die Library
 <a href="https://github.com/quil/quil">Quil</a> von Sam Aaron verwendet. Quil ist ein in Clojure programmierter Wrapper für
-Java-based Processing und macht das Programmiern von <a href="processing.org">Processing</a> in Clojure möglich.</p>
+Java-based Processing und macht das Programmieren von <a href="processing.org">Processing</a> in pure Clojure möglich.</p>
 
 <p>Ich habe ca. 10 der Code-Samples in Clojure implementiert und will hier 2 davon kurz beschreiben.</p>
   
 
 <h2>Fluid Resistance</h2>
 
-<p>Dieses Beispiel ist aus dem Kapitel 2 "Forces".</p> 
+<p>Das Beispiel Fluide Resistance ist aus dem Kapitel 2 "Forces" und veranschaulicht die kombinierte Wirkung
+von Schwerkraft und Fluid Resistance auf Körper mit unterschlicher Masse.</p> 
 
 <video controls="controls">
   <source src="/videos/fluidresistance.mp4" type="video/mp4" />
@@ -22,7 +23,21 @@ Java-based Processing und macht das Programmiern von <a href="processing.org">Pr
   Video not playing? <a href="/videos/fluideresistance.mp4">Download file</a> instead.
 </video> 
 
-<p>Embedded Snippet</p>
+<p>Das Programm besteht aus 3 Hauptteilen: Mover, Fluid und Processing-Main. Es werden Clojure Protocols zur Formulierung 
+der Abstraktionen verwendet.</p>
+
+<p>Die Datenstruktur <code>Mover</code> repräsentiert ein im 2D-Raum bewegbares Objekt. Für Mover sind die Protokolle 
+<code>Mobile</code>, <code>Massive</code> und <code>Drawable</code> implementiert.</p>  
+
+<script src="https://gist.github.com/4688586.js?file=mover.clj"></script>
+
+<p>Die Datenstruktur <code>Fluid</code> repräsentiert eine im 2D-Raum statisch montierte Flüssigkeit. Für Fluide sind
+die Protokolle <code>Permeable</code> <code>Drawable</code> implementiert.</p>
+
+<script src="https://gist.github.com/4688586.js?file=fluid.clj"></script>
+
+<p>Processing-Main implementiert die durch Quil/Processing via Callback aufgerufenen Funktionen für das Setup
+und den Draw-Loop und die Maushandler.</p>
 
 <script src="https://gist.github.com/4688586.js?file=main.clj"></script>
 
