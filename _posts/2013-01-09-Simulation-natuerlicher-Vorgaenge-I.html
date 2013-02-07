@@ -5,7 +5,7 @@ title: "Simulation natürlicher Vorgänge - Fluid-Resistance"
 ---
 
 <p>Ende letzten Jahres habe ich mich ein wenig mit dem Buch <a href="http://natureofcode.com/book">The Nature of Code</a> 
-von Daniel Shiffman beschäftigt und einige der Processing-Code-Beispiele in Clojure übersetzt. Dabei habe ich die Library
+von Daniel Shiffman beschäftigt und einige der Processing-Beispiele nach Clojure übersetzt. Dabei habe ich die Library
 <a href="https://github.com/quil/quil">Quil</a> von Sam Aaron verwendet. Quil ist ein in Clojure programmierter Wrapper für
 Java-based Processing und macht das Programmieren von <a href="processing.org">Processing</a> in pure Clojure möglich.</p>
 
@@ -32,18 +32,18 @@ der Abstraktionen verwendet.</p>
 <p>Die Datenstruktur <code>Mover</code> repräsentiert ein im 2D-Raum bewegbares Objekt. Für <code>Mover</code> sind die Abstraktionen 
 <code>Mobile</code>, <code>Massive</code> und <code>Drawable</code> implementiert.</p>  
 
-<script src="https://gist.github.com/4688586.js?file=mover.clj"></script>
+<script src="https://gist.github.com/dokuryoku/4688586.js?file=mover.clj"></script>
 
 <p>Die Datenstruktur <code>Fluid</code> repräsentiert eine im 2D-Raum statisch platzierte Flüssigkeit. Für <code>Fluid</code> sind
 die Abstraktionen <code>Permeable</code> und <code>Drawable</code> implementiert.</p>
 
-<script src="https://gist.github.com/4688586.js?file=fluid.clj"></script>
+<script src="https://gist.github.com/dokuryoku/4688586.js?file=fluid.clj"></script>
 
 <p>Processing-Main definiert die Sketch-Paramameter und den Sketch-State (<code>view-model</code>) sowie die Fortschreibung 
 des State im Draw-Loop. Außerdem sind im Processing-Main die durch Quil/Processing via Callback aufgerufenen Funktionen für 
 das Setup, den Draw-Loop und den Maushandler implementiert.</p>
 
-<script src="https://gist.github.com/4688586.js?file=main.clj"></script>
+<script src="https://gist.github.com/dokuryoku/4688586.js?file=main.clj"></script>
 
 <p>TODO: Hier fehlen ein paar Sätze zu den Design-Entscheidungen, die getroffen wurden.</p>
 
