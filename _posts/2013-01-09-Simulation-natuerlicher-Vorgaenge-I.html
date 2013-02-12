@@ -1,7 +1,7 @@
 ---
 layout: post
 description: "Beispiele für die computergestützte Simulation natürlicher Vorgänge"
-title: "Simulation natürlicher Vorgänge - Fluid-Resistance"
+title: "Simulation natürlicher Vorgänge - Motion 101"
 ---
 
 <p>Ende letzten Jahres habe ich mich ein wenig mit dem Buch <a href="http://natureofcode.com/book">The Nature of Code</a> 
@@ -12,43 +12,38 @@ Java-based Processing und macht das Programmieren von <a href="processing.org">P
 <p>Ich habe ca. zehn der codierten Beispiele in Clojure implementiert und will in separaten Posts zwei oder drei davon vorstellen. 
 Hier das erste Beispiel:</p>   
 
-<h2>Fluid Resistance</h2>
+<h2>Motion 101</h2>
 
-<p>Das Beispiel <em>Fluid Resistance</em> ist aus dem <a href="http://natureofcode.com/book/chapter-2-forces">Kapitel 2 - Forces</a> und 
-veranschaulicht die kombinierte Wirkung von Schwerkraft und Fluid Resistance auf Körper mit unterschiedlicher Masse. 
-Hier ein Screencast:</p> 
+<p>Das Beispiel <em>Motion 101</em> ist aus dem <a href="http://natureofcode.com/book/chapter-1-vectors/">Kapitel 1 - Vectors</a> und
+simuliert die Wirkung einer Kraft auf einen Körper. Dabei wird speziell auf die Darstellung von Geschwindigkeit und Beschleunigung als 
+Vector und das Rechnen mit Vektoren eingegangen. Hier ein Screencast:</p> 
 
 <video controls="controls">
-	  <source src="/videos/fluidresistance.mp4" type="video/mp4" />
-  <source src="/videos/fluidresistance.ogv" type="video/ogg" />
-  Video not playing? <a href="/videos/fluideresistance.mp4">Download file</a> instead.
+	  <source src="/videos/motion101.mp4" type="video/mp4" />
+  <source src="/videos/motion101.ogv" type="video/ogg" />
+  Video not playing? <a href="/videos/motion101.ogv">Download file</a> instead.
 </video> 
 
 <p/>
 
-<p>Das Programm besteht aus 3 Hauptteilen: <em>Mover</em>, <em>Fluid</em> und <em>Processing-Main</em>. Es werden Clojure Protocols zur Formulierung 
-der Abstraktionen verwendet.</p>
+<p>Das Programm besteht aus 2 Hauptteilen: <em>Mover</em> und <em>Processing-Main</em>.</p> 
 
-<p>Die Datenstruktur <code>Mover</code> repräsentiert ein im 2D-Raum bewegbares Objekt. Für <code>Mover</code> sind die Abstraktionen 
-<code>Mobile</code>, <code>Massive</code> und <code>Drawable</code> implementiert.</p>  
+<p>Die Datenstruktur <code>Mover</code> repräsentiert ein im 2D-Raum bewegbares Objekt.</p>  
 
-<script src="https://gist.github.com/dokuryoku/4688586.js?file=mover.clj"></script>
+<script src="https://gist.github.com/dokuryoku/4760915.js?file=mover.clj"></script>
 
-<p>Die Datenstruktur <code>Fluid</code> repräsentiert eine im 2D-Raum statisch platzierte Flüssigkeit. Für <code>Fluid</code> sind
-die Abstraktionen <code>Permeable</code> und <code>Drawable</code> implementiert.</p>
+<p>Processing-Main definiert den Sketch-State sowie die Fortschreibung des State im Draw-Loop. Außerdem 
+sind im Processing-Main die durch Quil/Processing via Callback aufgerufenen Funktionen für das Display-Setup, 
+den Draw-Loop implementiert.</p>
 
-<script src="https://gist.github.com/dokuryoku/4688586.js?file=fluid.clj"></script>
-
-<p>Processing-Main definiert die Sketch-Paramameter und den Sketch-State (<code>view-model</code>) sowie die Fortschreibung 
-des State im Draw-Loop. Außerdem sind im Processing-Main die durch Quil/Processing via Callback aufgerufenen Funktionen für 
-das Setup, den Draw-Loop und den Maushandler implementiert.</p>
-
-<script src="https://gist.github.com/dokuryoku/4688586.js?file=main.clj"></script>
+<script src="https://gist.github.com/dokuryoku/4760915.js?file=main.clj"></script>
 
 <p>TODO: Hier fehlen ein paar Sätze zu den Design-Entscheidungen, die getroffen wurden.</p>
 
 <h2>Links</h2>
 
 <ul>
+<li>Hier der komplette <a href="https://gist.github.com/dokuryoku/4760915?file=motion101.clj">Code</a> zum Beispiel</li>
+<li>Der Link zum Buch <a href="http://natureofcode.com/book">The Nature of Code</a></li>
 <li>Es gibt eine Videoserie zu The Nature of Code <a href="http://vimeo.com/channels/464686">http://vimeo.com/channels/464686</a></li>
 </ul>
