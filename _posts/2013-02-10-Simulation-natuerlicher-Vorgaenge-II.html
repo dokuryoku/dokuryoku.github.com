@@ -32,20 +32,29 @@ der Abstraktionen verwendet.</p>
 <p>Die Datenstruktur <code>Mover</code> repräsentiert ein im 2D-Raum bewegbares Objekt. Für <code>Mover</code> sind die Abstraktionen 
 <code>Mobile</code>, <code>Massive</code> und <code>Drawable</code> implementiert.</p>  
 
-<script src="https://gist.github.com/dokuryoku/4688586.js?file=mover.clj"></script>
+<script src="https://gist.github.com/dokuryoku/4966943.js?file=mover.clj"></script>
 
 <p>Die Datenstruktur <code>Fluid</code> repräsentiert eine im 2D-Raum statisch platzierte Flüssigkeit. Für <code>Fluid</code> sind
 die Abstraktionen <code>Permeable</code> und <code>Drawable</code> implementiert.</p>
 
-<script src="https://gist.github.com/dokuryoku/4688586.js?file=fluid.clj"></script>
+<script src="https://gist.github.com/dokuryoku/4966943.js?file=fluid.clj"></script>
 
 <p>Processing-Main definiert die Sketch-Paramameter und den Sketch-State (<code>view-model</code>) sowie die Fortschreibung 
 des State im Draw-Loop. Außerdem sind im Processing-Main die durch Quil/Processing via Callback aufgerufenen Funktionen für 
 das Setup, den Draw-Loop und den Maushandler implementiert.</p>
 
-<script src="https://gist.github.com/dokuryoku/4688586.js?file=main.clj"></script>
+<script src="https://gist.github.com/dokuryoku/4966943.js?file=main.clj"></script>
 
 <p>TODO: Hier fehlen ein paar Sätze zu den Design-Entscheidungen, die getroffen wurden.</p>
+
+
+<p>Wie testet man sowas ? ... blah blah ...</p>
+
+<script src="https://gist.github.com/dokuryoku/4966943.js?file=test-helpers.clj"></script>
+
+<script src="https://gist.github.com/dokuryoku/4966943.js?file=fluid-tests.clj"></script>
+
+<script src="https://gist.github.com/dokuryoku/4966943.js?file=mover-tests.clj"></script>
 
 <h2>Links</h2>
 
