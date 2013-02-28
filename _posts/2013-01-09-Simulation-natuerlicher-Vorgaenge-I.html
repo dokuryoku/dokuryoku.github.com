@@ -21,16 +21,18 @@ Vector und das Rechnen mit Vektoren eingegangen. Hier ein Screencast:</p>
 <video controls="controls">
 	  <source src="/videos/motion101.mp4" type="video/mp4" />
   <source src="/videos/motion101.ogv" type="video/ogg" />
-  Video not playing? <a href="/videos/motion101.ogv">Download file</a> instead.
+  Video not playing? <a href="/videos/motion101.mp4">Download file</a> instead.
 </video> 
 
 <p/>
 
 <p>Das Programm besteht aus 2 Hauptteilen: <em>Mover</em> und <em>Processing-Main</em>.</p> 
 
-<p>Die Datenstruktur <code>Mover</code> repräsentiert ein im 2D-Raum bewegbares Objekt.</p>  
+<p>Die Datenstruktur <code>Mover</code> repräsentiert den State - Ein im 2D-Raum bewegbares kreisrundes 
+Objekt, das durch eine Kraft zum Mauszeigen hingezogen wird und dadurch eine Beschleunigung erfährt. Die
+Beschleunigung ist auf einen Maximalwert beschränkt.</p>  
 
-<script src="https://gist.github.com/dokuryoku/4966925.js?file=mover-clj"></script>
+<script src="https://gist.github.com/dokuryoku/4966925.js?file=mover.clj"></script>
 
 <p>Processing-Main definiert den Sketch-State sowie die Fortschreibung des State im Draw-Loop. Außerdem 
 sind im Processing-Main die durch Quil/Processing via Callback aufgerufenen Funktionen für das Display-Setup, 
@@ -38,7 +40,7 @@ den Draw-Loop implementiert.</p>
 
 <script src="https://gist.github.com/dokuryoku/4966925.js?file=main.clj"></script>
 
-<p>TODO: Hier fehlen ein paar Sätze zu den Design-Entscheidungen, die getroffen wurden.</p>
+<p>.</p>
 
 <h2>Links</h2>
 
