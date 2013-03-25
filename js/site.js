@@ -3,7 +3,7 @@
 	    "/2013/03/15/Work-Hard-Play-Hard":"scientology-building.jpg",
         "/2013/02/10/Simulation-natuerlicher-Vorgaenge-II":"nature-of-code.jpg",
 	    "/2013/02/07/Logic-Programming-Basic-Graph-Relations":"clojure-logo.png",
-	    "/2013/02/02/The-Buddha-within":"portrait_of_ikkyu.jpg",
+	    "/2013/02/02/The-Buddha-within":"portrait-of-ikkyu.jpg",
 	    "/2013/01/30/Reality-Of-Human-Flight":"wingsuite-flying.png",
         "/2013/01/09/Simulation-natuerlicher-Vorgaenge-I":"nature-of-code.jpg",
 		"/2013/01/25/Markup-Transformation-mit-Enlive":"clojure-logo.png",
