@@ -29,7 +29,8 @@ das die Kräfte Schwerkraft und Reibung wirken können.</p>
 <script src="https://gist.github.com/dokuryoku/4966943.js?file=mover.clj"></script>
 
 <p>Die Datenstruktur <code>Fluid</code> repräsentiert eine im 2D-Raum statisch platzierte 
-Flüssigkeit, die auf die Gegenständen, die sich hindurch bewegen als Widerstand wirkt.</p>
+Flüssigkeit, welche auf <em>Mover</em>, die sich hindurch bewegen, als Widerstand wirkt d.h.
+eine sog. Drag-Force erzeugt.</p>
 
 <script src="https://gist.github.com/dokuryoku/4966943.js?file=fluid.clj"></script>
 
@@ -40,9 +41,9 @@ Maushandler implementiert.</p>
 
 <script src="https://gist.github.com/dokuryoku/4966943.js?file=main.clj"></script>
 
-<p>Hier noch 2 Ausschnitte aus dem assozierten Testcoding. Eine Schwierigkeit dabei 
-ist, in den Tests den gegeigneten Runtimekontext herzustellen, der statebehaftet ist 
-und wegen der Grafik teilweise die Bereitstellung spezieller Resourcen erfordert.</p>
+<p>Hier noch 2 Ausschnitte aus dem assozierten Testcoding. Eine (klassische) Schwierigkeit dabei 
+ist, für die Tests den gegeigneten Runtimekontext herzustellen, der oft statebehaftet ist 
+und teilweise spezielle Resourcen für die Grafik bereitstellen muß.</p>
 
 <script src="https://gist.github.com/dokuryoku/4966943.js?file=fluid-tests.clj"></script>
 
