@@ -10,9 +10,9 @@ von Markup (XML, HTML ...) gedacht und kann für Scraping, Templating und jeglic
 eingesetzt werden.
 
 Ein wesentlicher Vorteil von Enlive ist, dass es dem Programmierer erlaubt, Design und Content 
-weitgehend zu separieren und so eine Zusammenarbeit zwischen Programmierer und (Web)Designer
-erlaubt, die vom Designer nicht unbedingt Kenntnisse im Umgang mit clojure-Code erfordern. Enlive 
-nutzt intensiv die Möglichkeiten clojure's aus und erreicht durch funktionale Komposition und 
+sehr weitgehend zu separieren und so eine Zusammenarbeit zwischen Programmierer und Web-Designer
+erlaubt, die vom Designer nicht unbedingt Kenntnisse im Umgang mit clojure-Code verlangt. Enlive 
+nutzt intensiv die Möglichkeiten von clojure aus und erreicht durch funktionale Komposition und 
 Macros eine große Mächtigkeit bei einem Code-Umfang von "nur" ~1000 Lines netto.   
 
 Nun zu dem Anwendungs-Beispiel, welches Enlive für das Erzeugen von HTML aus Templates verwendet.
@@ -121,8 +121,8 @@ Fazit: Enlive ist im Vergleich zu anderen Varianten der Markup-Verarbeitung (XSL
 einfache und elegante Lösung. Es gibt allerdings eine bedeutende Einschränkung: Markup, welche
 Namespaces verwendet, kann mit Enlive 1.0.x nicht verarbeitet werden.
 
-Enfocus: Ein interessantes Projekt, das sich auf Enlive bezieht, ist [Enfocus](http://github.com/ckirkendall/enfocus) 
+Ein interessantes Projekt, das sich auf Enlive bezieht, ist [Enfocus](http://github.com/ckirkendall/enfocus) 
 Enfocus ist in [Clojurescript](http://github.com/clojure/clojurescript) programmiert und bietet
-Enlive-ähnliche Möglichkeiten der Markup-Verarbeitung auf dem Client. Intern verwendet
+Enlive-ähnliche Möglichkeiten der Markup-Verarbeitung auf dem Browser-Client. Intern verwendet
 Enlive [Domina](https://github.com/levand/domina.git) ;-) das sich wiederum auf das mit
 Clojurescript automatisch mitkommende [Google Closure](https://developers.google.com/closure/library/) abstützt.         
