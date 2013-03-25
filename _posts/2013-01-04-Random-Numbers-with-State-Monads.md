@@ -127,12 +127,12 @@ Die Verwendung von State-Monads bewirkt, dass die Daten durch die programmierte 
 werden können.
 
 Die Implementierung von Monads in ihrer ganzen Tiefe zu verstehen, ist ein hartes Brot, aber
-wenn man sich auf die reine Nutzerperspektive beschränkt und nur die durch colojure.algo.monads
-vordefinierten Monads nutzt, kann man sich auf das Schreiben von Monadic-Functions und die Nutzung
+wenn man sich auf die reine Nutzerperspektive beschränkt und nur die durch <a href="http://github.com/clojure/algo.monads">clojure.algo.monads</a>
+definierten Monad-Logik nutzt, kann man sich auf das Schreiben von Monadic-Functions und die Nutzung
 gemäß vorgegebener Muster beschränken, was einem die Sache bedeutend erleichtert. Allerdings sollte
 man von einer Verwendung von Monads absehen, wenn es eine konventionelle Alternative gibt.
 Zumindest so lange wie das volle Verständnis, wie Monads funkionieren nicht Allgemeingut in der
-Welt der Programmierer ist -> Wartbarkeit in den Dimensionen Mensch und Zeit. 
+Welt der Programmierer ist -> mangelnde Wartbarkeit in den Dimensionen Mensch und Zeit ist ein NoGo. 
 
 ## Links
 
