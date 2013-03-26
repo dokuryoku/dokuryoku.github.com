@@ -1,11 +1,26 @@
 ---
 layout: post
-description: "Logic Programming - Implementing some Basic Relations for Graph Analysis. Siehe http://martinsprogrammingblog.blogspot.de/2012/09/some-corelogic-graph-code.html"
+description: "Logic Programming - Implementing some Basic Relations for Graph Analysis."
 title: "Logic Programming - Basic Relations for Graph Analysis"
 ---
 
-<p><a href="http://github.com/swannodette">David Nolen</a> Einer der herausragenden Köpfe der Clojure-Community
-hat ... blah blah blah  Die Logik Programierung </p>
+<p>Ich habe mir vorgenommen, ein paar Blog-Einträge über Logik-Programmierung zu schreiben. Ich hatte bereits in "grauer
+Vorzeit" (1985 - OMFG) ein kurzes Intermezzo mit Prolog. Davon ist mir nicht mehr in Erinnerung geblieben, als das Gefühl,
+dass es sich um etwas Interessantes handelt, das eine spezielle Art des Denkens erfordert und daher schwer zugänglich 
+ist. Man lernt Logik-Programmierung nicht so nebenbei.</p>     
+
+<p>Bei <em>core.logical</em> handelt es sich um eine Library für <a href="http://github.com/clojure">Clojure</a> und <a href="http://github.com/clojure/clojurescript"Clojurescript</a>, 
+welche die Hauptelemente der Prolog-Funktionalität: <em>rational programming</em>, 
+<em>constraint logic programming</em> und  <em>nominal logic programming</em> in Clojure 
+verfügbar macht.</p> 
+  
+<p>Das theoretische Fundament für <em>core.logic</em>liefert die Scheme-Erweiterung MiniKanren,
+die auf eine Dissertation von <a href="http://webyrd.net">William Byrd</a> zurück geht.</p>
+
+<p>Implementiert wurde <em>core.logic</em> hauptsächlich von <a href="http://github.com/swannodette">David Nolen</a>. 
+David ist einer der herausragenden Köpfe der Clojure-Community und spielt auch bei der Implementierung
+von ClojureScript eine herausragende Rolle. Er arbeitet hauptberuflich als Informatiker für die NewYork Times.</p>
+
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=facts-and-rels.clj"></script>
 
@@ -18,3 +33,7 @@ hat ... blah blah blah  Die Logik Programierung </p>
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=common-ancestoro.clj"></script>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=path.clj"></script>
+
+<h2>Links</h2>
+
+Die Original-Quelle hierzu ist Martin Trojers Blog: <a href="http://martintrojer.github.com/clojure/2012/09/27/some-corelogic-graph-code">Some core.logic graph code</a> 
