@@ -1,5 +1,6 @@
 (function(){
 	var logoMap = {
+	    "/2013/03/27/Regrets-of-the-Dying":"holding-hand.jpg",
 	    "/2013/03/15/Schoene-Neue-Arbeitswelt":"scientology-building.jpg",
         "/2013/02/10/Simulation-natuerlicher-Vorgaenge-II":"nature-of-code.jpg",
 	    "/2013/02/07/Logic-Programming-Basic-Graph-Relations":"clojure-logo.png",
