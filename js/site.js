@@ -1,6 +1,6 @@
 (function(){
 	var logoMap = {
-	    "/2013/03/15/Work-Hard-Play-Hard":"scientology-building.jpg",
+	    "/2013/03/15/Schoene-Neue-Arbeitswelt":"scientology-building.jpg",
         "/2013/02/10/Simulation-natuerlicher-Vorgaenge-II":"nature-of-code.jpg",
 	    "/2013/02/07/Logic-Programming-Basic-Graph-Relations":"clojure-logo.png",
 	    "/2013/02/02/The-Buddha-within":"portrait-of-ikkyu.jpg",
