@@ -5,35 +5,37 @@ title: "Logic Programming - Basic Relations for Graph Analysis"
 ---
 
 <p>Als erstes Anwendungs-Beispiel für Logik Programming mit <em>core.logic</em> wähle ich eine Lösung zur Repräsentation
-und Analyse von einfachen Graphen. Das Beispiel ist dem <a href="http://martintrojer.github.com">Blog</a> 
-von Martin Trojer entnommen. Es nutzt die von <em>core.logic</em> bereitgestellten Möglichkeiten 
+und Analyse von einfachen Graphen. Das Beispiel ist einem <a href="http://martintrojer.github.com/clojure/2012/09/27/some-corelogic-graph-code">Artikel</a> 
+im Blog von Martin Trojer entnommen. Es nutzt die von <em>core.logic</em> bereitgestellten Möglichkeiten 
 des Relational Programming inclusive Disequality.</p>  
 
-<p>Die Original-Quelle hierzu ist ein Artikel in Martin Trojers Blog: <a href="http://martintrojer.github.com/clojure/2012/09/27/some-corelogic-graph-code">Some core.logic graph code</a></p> 
+<p><em>Facts</em> entsprechen den Datensätzen bei RDBMS und gehören zu je einer Relation (<code>defrel<code>).</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=facts-and-rels.clj"></script>
 
-<p><em>Facts</em> entsprechen den Datensätzen bei RDBMS und gehören zu je einer Relation (<em>defrel<em>).</p>
+<p><code>(run* [q] (ancestorso :d q))</code> liefert aller Vaterknoten von <code>:d</code>. Die via
+<code>fresh</code> erzeugte Logik-Variable <code>z</code> stellt die Verbinung zwischen den
+Vaterknoten und den Zielknoten her. Die Relation <code>ancestorso</code> verwendet Rekursion.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=ancestorso.clj"></script>
 
-<p><code>(run* [q] (ancestorso :d q))</code> liefert aller Vaterknoten von :d. Die via
-<em>fresh</em> erzeugte Logik-Variable <em>z</em> stellt die Verbinung zwischen den
-Vaterknoten und den Zielknoten her. Diese Relation verwendet Rekursion.</p>
+<p><code>(run* [q] (descendantso :a q))</code>Liefert alle Kindknoten von <code>:a</code>. Die via
+<code>fresh</code> erzeugte Logik-Variable <code>z</code> stellt die Verbinung zwischen den
+Vaterknoten und den Kindknoten her. Diese Relation <code>descendantso</code> verwendet Rekursion.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=descendantso.clj"></script>
 
-<p><code>(run* [q] (descendantso :a q))</code>Liefert alle Kindknoten von :a. Die via
-<em>fresh</em> erzeugte Logik-Variable <em>z</em> stellt die Verbinung zwischen den
-Vaterknoten und den Kindknoten her. Diese Relation verwendet Rekursion.</p>
+<p><code>(run* [q] (siblingso :c q))</code> liefert alle Bruder-Konten von <code>:c</code>
+Die via fresh erzeugte Logik-Variable <code>z</code> steht für den gemeinsamen Vaterknoten.
+Die Relation <code>siblingso</code> verwendet den Disequality-Operator <code>!=</code>.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=siblingso.clj"></script>
 
-<p><code>(run* [q] (siblingso :c q))</code> liefert alle Bruder-Konten von :c</p>
+<p><code>(run* [q] (common-ancestoro :f :d q))</code> liefert alle <code>:f</code> und <code>:d</code> gemeinsamen Vaterknoten.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=common-ancestoro.clj"></script>
 
-<p><code>(run* [q] (common-ancestoro :f :d q))</code> liefert alle :f und :d gemeinsamen Vaterknoten.</p>
+<p><code>(run* [q] (path :a :f q))</code> liefert alle Pfade von <code>:a</code> nach <code>:f</code></p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=path.clj"></script>
 
