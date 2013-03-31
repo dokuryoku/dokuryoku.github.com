@@ -9,7 +9,7 @@ von Daniel Shiffman:</p>
 
 <h2>Particle Systems</h2>
 
-<p>Das Beispiel <em>Particle Systems</em> ist aus dem <a href="http://natureofcode.com/book/chapter-9-the-evolution-of-code">Kapitel 9 - The Evolution of Code</a>
+<p>Das Beispiel <em>Particle Systems</em> ist aus dem <a href="http://natureofcode.com/book/chapter-4-particle-systems">Kapitel 4 - Particle Systems</a>
 Hier ein Screencast:</p> 
 
 <video controls="controls">
@@ -29,21 +29,29 @@ der 80iger Jahre in Computerspielen.</p>
 und <code>Main/Sketch</code>. Das Beispiel nutzt Clojure <a href="http://clojure.org/protocols">Protocols</a>
 und Types/Record um Abstraktionen definieren:</p> 
 
-<script src="https://gist.github.com/dokuryoku/5280635#file-abstractions-clj"></script>
+<script src="https://gist.github.com/dokuryoku/5280635.js?file=abstractions.clj"></script>
 
 <p>Der Datentyp <code>Particle</code> hat die Attribute <code>id mass location velocity acceleration lifespan</code>
 und implementiert die Abtraktionen <code>Mobile, Massive, Expirable, Drawable</code>.</p> 
 
-<script src="https://gist.github.com/dokuryoku/5280635#file-particle-clj"></script>
+<script src="https://gist.github.com/dokuryoku/5280635.js?file=particle.clj"></script>
 
 <p>Der Datentyp <code>ParticleSystem</code> hat die Attribute <code>origin particles</code>
 und implementiert die Abtraktionen <code>Mobile, Massive, Drawable</code>.</p> 
 
-<script src="https://gist.github.com/dokuryoku/5280635#file-particle-system-clj"></script>
+<script src="https://gist.github.com/dokuryoku/5280635.js?file=particle-system.clj"></script>
 
 <p>Processing-Main definiert den Sketch-State sowie die Fortschreibung des State im Draw-Loop. Außerdem 
 sind im Processing-Main die durch Quil/Processing via Callback aufgerufenen Funktionen für das Display-Setup, 
 den Draw-Loop implementiert.</p>
 
-<script src="https://gist.github.com/dokuryoku/5280635#file-sketch-clj"></script>
+<script src="https://gist.github.com/dokuryoku/5280635.js?file=sketch.clj"></script>
 
+<h2>Links</h2>
+
+<ul>
+<li>Link zum kompletten <a href="https://gist.github.com/dokuryoku/5280635#file-_smart-rockets-1-clj">Code</a> des Beispiels</li>
+<li>Link zum <a href="https://github.com/shiffman/The-Nature-of-Code-Examples/tree/master/Processing/chp4_systems/NOC_4_06_ParticleSystemForces">Code</a> der Javascript-Implentierung aus dem Buch</li>
+<li>Link zum Buch <a href="http://natureofcode.com/book">The Nature of Code</a></li>
+<li>Es gibt eine Videoserie zu The Nature of Code <a href="http://vimeo.com/channels/464686">http://vimeo.com/channels/464686</a></li>
+</ul>
