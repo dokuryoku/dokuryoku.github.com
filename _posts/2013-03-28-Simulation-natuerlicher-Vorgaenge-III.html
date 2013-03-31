@@ -27,30 +27,34 @@ der 80iger Jahre in Computerspielen.</p>
 
 <p>Das Programm besteht aus 3 Hauptteilen: <code>Particle</code>, <code>ParticleSystem</code>
 und <code>Main/Sketch</code>. Das Beispiel nutzt Clojure <a href="http://clojure.org/protocols">Protocols</a>
-und Types/Record um Abstraktionen definieren:</p> 
+und Clojure <a href="http://clojure.org/datatypes">DataTypes</a> um Abstraktionen definieren:</p> 
 
 <script src="https://gist.github.com/dokuryoku/5280635.js?file=abstractions.clj"></script>
 
-<p>Der Datentyp <code>Particle</code> hat die Attribute <code>id mass location velocity acceleration lifespan</code>
+<p>Der Datentyp <code>Particle</code> hat die Attribute <code>id, mass, location, velocity, acceleration, lifespan</code>
 und implementiert die Abtraktionen <code>Mobile, Massive, Expirable, Drawable</code>.</p> 
 
 <script src="https://gist.github.com/dokuryoku/5280635.js?file=particle.clj"></script>
 
-<p>Der Datentyp <code>ParticleSystem</code> hat die Attribute <code>origin particles</code>
+<p>Der Datentyp <code>ParticleSystem</code> hat die Attribute <code>origin, particles</code>
 und implementiert die Abtraktionen <code>Mobile, Massive, Drawable</code>.</p> 
 
 <script src="https://gist.github.com/dokuryoku/5280635.js?file=particle-system.clj"></script>
 
-<p>Processing-Main definiert den Sketch-State sowie die Fortschreibung des State im Draw-Loop. Außerdem 
+<p>Processing-Main definiert den Sketch-State (<code>particle-system</code>) sowie die Fortschreibung des State im Draw-Loop. Außerdem 
 sind im Processing-Main die durch Quil/Processing via Callback aufgerufenen Funktionen für das Display-Setup, 
 den Draw-Loop implementiert.</p>
 
 <script src="https://gist.github.com/dokuryoku/5280635.js?file=sketch.clj"></script>
 
+<p>In dem Buch gibt es eine Variante der Implementierung eines Particle-System, die Polymorphismus verwendet,
+um Particles mit unterschiedlichen Formen (Kreis, Quadrat) darzustellen. Auch dazu habe ich  eine 
+korrespondierende Variante in Clojure programmiert: <a href="https://gist.github.com/dokuryoku/5280875#file-_smart-rockets-2-clj">Polymorphes Particle-System</a>. 
+
 <h2>Links</h2>
 
 <ul>
-<li>Link zum kompletten <a href="https://gist.github.com/dokuryoku/5280635#file-_smart-rockets-1-clj">Code</a> des Beispiels</li>
+<li>Link zum kompletten <a href="https://gist.github.com/dokuryoku/5280635#file-_particle-system-1-clj">Code</a> des Beispiels</li>
 <li>Link zum <a href="https://github.com/shiffman/The-Nature-of-Code-Examples/tree/master/Processing/chp4_systems/NOC_4_06_ParticleSystemForces">Code</a> der Javascript-Implentierung aus dem Buch</li>
 <li>Link zum Buch <a href="http://natureofcode.com/book">The Nature of Code</a></li>
 <li>Es gibt eine Videoserie zu The Nature of Code <a href="http://vimeo.com/channels/464686">http://vimeo.com/channels/464686</a></li>
