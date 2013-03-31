@@ -29,27 +29,28 @@ von Martin Trojer entnommen.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=facts-and-rels.clj"></script>
 
-<p>tbd: Bescheibung ...</p>
+<p><em>Facts</em> entsprechen den Datensätzen bei RDBMS und gehören zu je einer Relation (<em>defrel<em>).</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=ancestorso.clj"></script>
 
-<p>tbd: Bescheibung ...</p>
+<p><code>(run* [q] (ancestorso :d q))</code> liefert aller Vaterknoten von :d.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=descendantso.clj"></script>
 
-<p>tbd: Bescheibung ...</p>
+<p><code>(run* [q] (descendantso :a q))</code>Liefert alle Kindknoten von :a.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=siblingso.clj"></script>
 
-<p>tbd: Bescheibung ...</p>
+<p><code>(run* [q] (siblingso :c q))</code> liefert alle Bruder-Konten von :c</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=common-ancestoro.clj"></script>
 
-<p>tbd: Bescheibung ...</p>
+<p><code>(run* [q] (common-ancestoro :f :d q))</code> liefert alle :f und :d gemeinsamen Vaterknoten.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=path.clj"></script>
 
-<p>tbd: Fazit ...</p>
+<p>Das Beispiel zeigt eine einfache Form des Rational Programming. Rational Programming
+kommt mit wenigen Operatoren aus: ==(unify), conde, fresh, !=, all</p>
 
 <h2>Links</h2>
 
