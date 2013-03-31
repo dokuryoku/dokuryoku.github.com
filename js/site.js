@@ -5,6 +5,7 @@
 	    "/2013/03/15/Schoene-Neue-Arbeitswelt":"scientology-building.jpg",
         "/2013/02/10/Simulation-natuerlicher-Vorgaenge-II":"nature-of-code.jpg",
 	    "/2013/02/07/Logic-Programming-Basic-Graph-Relations":"clojure-logo.png",
+	    "/2013/02/02/Logic-Programming-Intro":"clojure-logo.png",
 	    "/2013/02/02/The-Buddha-within":"portrait-of-ikkyu.jpg",
 	    "/2013/01/30/Reality-Of-Human-Flight":"wingsuite-flying.png",
         "/2013/01/09/Simulation-natuerlicher-Vorgaenge-I":"nature-of-code.jpg",
