@@ -4,28 +4,12 @@ description: "Logic Programming - Implementing some Basic Relations for Graph An
 title: "Logic Programming - Basic Relations for Graph Analysis"
 ---
 
-<p>Ich habe mir vorgenommen, ein paar Blog-Einträge über Logik-Programmierung zu schreiben. Ich hatte bereits in "grauer
-Vorzeit" (1985 - OMFG) ein kurzes Intermezzo mit Prolog. Davon ist mir nicht mehr in Erinnerung geblieben, als das Gefühl,
-dass es sich um etwas Interessantes handelt, das eine spezielle Art des Denkens erfordert und daher schwer zugänglich 
-ist. Man lernt Logik-Programmierung nicht so nebenbei.</p>     
-
-<p>Bei <em>core.logic</em> handelt es sich um eine Library für <a href="http://github.com/clojure">Clojure</a> und <a href="http://github.com/clojure/clojurescript">Clojurescript</a>, 
-welche die Hauptelemente von Prolog: <em>rational programming</em>, 
-<em>constraint logic programming</em> und  <em>nominal logic programming</em> in Clojure 
-verfügbar macht.</p> 
-  
-<p>Das theoretische Fundament für <em>core.logic</em> liefert die Scheme-Erweiterung <a href="http://minikanren.org/">MiniKanren</a>,
-die auf eine Dissertation von <a href="http://webyrd.net">William Byrd</a> zurück geht. Es gibt ein
-käuflich erwerbbares Buch, das die Grundlagen der Logik-Programmierung in einer sehr speziellen Form
-beschreibt: <a href="http://mitpress.mit.edu/books/reasoned-schemer">The reasoned Schemer</a></p>
-
-<p>Implementiert wurde <em>core.logic</em> hauptsächlich von <a href="http://github.com/swannodette">David Nolen</a>. 
-David ist einer der herausragenden Köpfe der Clojure-Community und spielt auch bei der Implementierung
-von ClojureScript eine herausragende Rolle. Er arbeitet hauptberuflich als Informatiker für die NewYork Times.</p>
-
-<p>Als erstes Anwendungs-Beispiel für <em>core.logic</em> wähle ich eine Lösung zur Repräsentation
+<p>Als erstes Anwendungs-Beispiel für Logik Programming mit <em>core.logic</em> wähle ich eine Lösung zur Repräsentation
 und Analyse von einfachen Graphen. Das Beispiel ist dem <a href="http://martintrojer.github.com">Blog</a> 
-von Martin Trojer entnommen.</p>  
+von Martin Trojer entnommen. Es nutzt die von <em>core.logic</em> bereitgestellten Möglichkeiten 
+des Relational Programming inclusive Disequality.</p>  
+
+<p>Die Original-Quelle hierzu ist ein Artikel in Martin Trojers Blog: <a href="http://martintrojer.github.com/clojure/2012/09/27/some-corelogic-graph-code">Some core.logic graph code</a></p> 
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=facts-and-rels.clj"></script>
 
@@ -33,11 +17,15 @@ von Martin Trojer entnommen.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=ancestorso.clj"></script>
 
-<p><code>(run* [q] (ancestorso :d q))</code> liefert aller Vaterknoten von :d.</p>
+<p><code>(run* [q] (ancestorso :d q))</code> liefert aller Vaterknoten von :d. Die via
+<em>fresh</em> erzeugte Logik-Variable <em>z</em> stellt die Verbinung zwischen den
+Vaterknoten und den Zielknoten her. Diese Relation verwendet Rekursion.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=descendantso.clj"></script>
 
-<p><code>(run* [q] (descendantso :a q))</code>Liefert alle Kindknoten von :a.</p>
+<p><code>(run* [q] (descendantso :a q))</code>Liefert alle Kindknoten von :a. Die via
+<em>fresh</em> erzeugte Logik-Variable <em>z</em> stellt die Verbinung zwischen den
+Vaterknoten und den Kindknoten her. Diese Relation verwendet Rekursion.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=siblingso.clj"></script>
 
@@ -49,9 +37,8 @@ von Martin Trojer entnommen.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=path.clj"></script>
 
-<p>Das Beispiel zeigt eine einfache Form des Rational Programming. Rational Programming
-kommt mit wenigen Operatoren aus: ==(unify), conde, fresh, !=, all</p>
-
 <h2>Links</h2>
 
-Die Original-Quelle hierzu ist Martin Trojers Blog: <a href="http://martintrojer.github.com/clojure/2012/09/27/some-corelogic-graph-code">Some core.logic graph code</a> 
+<p><a href="http://dokuryoku.github.com/2013/02/02/Logic-Programming-Intro.html">Logic-Programming Intro</a></p> 
+
+<p><a href="http://martintrojer.github.com">Martin Trojers Blog</a></p> 
