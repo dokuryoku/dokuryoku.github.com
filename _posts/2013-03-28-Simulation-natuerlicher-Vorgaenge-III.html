@@ -9,7 +9,7 @@ von Daniel Shiffman:</p>
 
 <h2>Particle Systems</h2>
 
-<p>Das Beispiel <em>Particle Systems</em> ist aus dem <a href="http://natureofcode.com/book/chapter-9-the-evolution-of-code">Kapitel 9 - The Evolution of Code</a> ... 
+<p>Das Beispiel <em>Particle Systems</em> ist aus dem <a href="http://natureofcode.com/book/chapter-9-the-evolution-of-code">Kapitel 9 - The Evolution of Code</a>
 Hier ein Screencast:</p> 
 
 <video controls="controls">
@@ -20,6 +20,30 @@ Hier ein Screencast:</p>
 
 <p/>
 
-<p>Description is To be done ...</p>
+<p>Particle-Systems werden in Computer-generierten Videos und Animationen verwendet, um
+natürliche Phänomene wie Feuer, Rauch, Wasser(fälle), Nebel, Grass, Schaum und einiges
+mehr darzustellen. Zum praktischen Einsatz von Particle-Systems kam es zuerst Anfang
+der 80iger Jahre in Computerspielen.</p>
 
+<p>Das Programm besteht aus 3 Hauptteilen: <code>Particle</code>, <code>ParticleSystem</code>
+und <code>Main/Sketch</code>. Das Beispiel nutzt Clojure <a href="http://clojure.org/protocols">Protocols</a>
+und Types/Record um Abstraktionen definieren:</p> 
+
+<script src="https://gist.github.com/dokuryoku/5280635#file-abstractions-clj"></script>
+
+<p>Der Datentyp <code>Particle</code> hat die Attribute <code>id mass location velocity acceleration lifespan</code>
+und implementiert die Abtraktionen <code>Mobile, Massive, Expirable, Drawable</code>.</p> 
+
+<script src="https://gist.github.com/dokuryoku/5280635#file-particle-clj"></script>
+
+<p>Der Datentyp <code>ParticleSystem</code> hat die Attribute <code>origin particles</code>
+und implementiert die Abtraktionen <code>Mobile, Massive, Drawable</code>.</p> 
+
+<script src="https://gist.github.com/dokuryoku/5280635#file-particle-system-clj"></script>
+
+<p>Processing-Main definiert den Sketch-State sowie die Fortschreibung des State im Draw-Loop. Außerdem 
+sind im Processing-Main die durch Quil/Processing via Callback aufgerufenen Funktionen für das Display-Setup, 
+den Draw-Loop implementiert.</p>
+
+<script src="https://gist.github.com/dokuryoku/5280635#file-sketch-clj"></script>
 
