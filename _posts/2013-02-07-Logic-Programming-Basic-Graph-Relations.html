@@ -29,7 +29,7 @@ verwendet Rekursion.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=descendantso.clj"></script>
 
-<p><code>(run* [q] (siblingso :c q))</code> liefert alle Bruder-Konten von <code>:c</code>
+<p><code>(run* [q] (siblingso :c q))</code> liefert alle Bruder-Knoten von <code>:c</code>.
 Die via fresh erzeugte Logik-Variable <code>z</code> steht für den gemeinsamen Vaterknoten.
 Die Relation <code>siblingso</code> verwendet den Disequality-Operator <code>!=</code>, um
 Reflexivität auszuschließen.</p>
@@ -40,7 +40,7 @@ Reflexivität auszuschließen.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=common-ancestoro.clj"></script>
 
-<p><code>(run* [q] (path :a :f q))</code> liefert alle Pfade von <code>:a</code> nach <code>:f</code></p>
+<p><code>(run* [q] (path :a :f q))</code> liefert alle Pfade von <code>:a</code> nach <code>:f</code>.</p>
 
 <script src="https://gist.github.com/dokuryoku/4733182.js?file=path.clj"></script>
 
