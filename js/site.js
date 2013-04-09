@@ -1,5 +1,6 @@
 (function(){
 	var logoMap = {
+        "/2013/04/09/Eine-japanische-Anekdote":"the-buddha-1.jpg",
         "/2013/04/01/Simulation-natuerlicher-Vorgaenge-IV":"nature-of-code.jpg",
         "/2013/03/28/Simulation-natuerlicher-Vorgaenge-III":"nature-of-code.jpg",
 	    "/2013/03/27/Regrets-of-the-Dying":"holding-hand.jpg",
