@@ -1,9 +1,9 @@
 (function(){
 	var logoMap = {
-        "/2013/04/09/Eine-japanische-Anekdote":"the-buddha-1.jpg",
+        "/2013/04/09/A-perfect-Moment-of-Delusion":"the-buddha-1.jpg",
         "/2013/04/01/Simulation-natuerlicher-Vorgaenge-IV":"nature-of-code.jpg",
         "/2013/03/28/Simulation-natuerlicher-Vorgaenge-III":"nature-of-code.jpg",
-	    "/2013/03/27/Regrets-of-the-Dying":"holding-hand.jpg",
+//	    "/2013/03/27/Regrets-of-the-Dying":"holding-hand.jpg",
 	    "/2013/03/15/Schoene-Neue-Arbeitswelt":"scientology-building.jpg",
         "/2013/02/10/Simulation-natuerlicher-Vorgaenge-II":"nature-of-code.jpg",
 	    "/2013/02/07/Logic-Programming-Basic-Graph-Relations":"clojure-logo.png",
