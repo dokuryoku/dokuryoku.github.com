@@ -7,13 +7,15 @@ title: "Logic Programming - Intro"
 <p>Ich habe mir vorgenommen, ein paar Blog-Einträge über Logik-Programmierung zu schreiben. Ich hatte bereits in "grauer
 Vorzeit" (1985 - OMG) ein kurzes Intermezzo mit Prolog. Davon war mir nicht viel mehr in Erinnerung geblieben, als das Gefühl,
 dass es sich um etwas Interessantes handelt, das eine spezielle, anspruchsvolle Art des Denkens erfordert, die man üben und 
-verinnerlichen muß. Wenn man diese spezielle Art des Denkens nicht beherrscht, bleibt die Logik-Programmnierung 
+verinnerlichen muß. Wenn man diese spezielle Art des Denkens nicht beherrscht, bleibt die Logik-Programmierung 
 schwer zugänglich.</p>     
 
 <p>Bei <em>core.logic</em> handelt es sich um eine Library für <a href="http://github.com/clojure">Clojure</a> und <a href="http://github.com/clojure/clojurescript">Clojurescript</a>, 
-welche die Hauptelemente von Prolog: <em>rational programming</em>, 
-<em>constraint logic programming</em> und  <em>nominal logic programming</em> in Clojure 
-verfügbar macht.</p> 
+welche die Main-Features von Prolog: <em>Rational Programming</em>, 
+<em>Constraint Logic Programming</em> und  <em>Nominal Logic Programming</em> in Clojure 
+verfügbar macht. Und zwar <em>language-embedded</em>, so daß die Logik-Programmierung in einem 
+Clojure-Programm in Form der gewohnten Syntax genutzt werden kann und auch umgekehrt
+innerhalb der Logik-Programmierung Clojure-Funktionen aufgerufen werden können.</p> 
   
 <p>Das theoretische Fundament für <em>core.logic</em> liefert die Scheme-Erweiterung <a href="http://minikanren.org/">MiniKanren</a>,
 die auf eine Dissertation von <a href="http://webyrd.net">William Byrd</a> zurück geht. Es gibt ein
@@ -22,13 +24,11 @@ beschreibt: <a href="http://mitpress.mit.edu/books/reasoned-schemer">The reasone
 
 <p>Implementiert wurde <em>core.logic</em> hauptsächlich von <a href="http://github.com/swannodette">David Nolen</a>. 
 David ist einer der herausragenden Köpfe der Clojure-Community und spielt auch bei der Implementierung
-von ClojureScript eine herausragende Rolle. Er arbeitet hauptberuflich als Informatiker für die NewYork Times.</p>
+von ClojureScript eine wichtige Rolle. Er arbeitet hauptberuflich als Informatiker für die NewYork Times.</p>
 
 <p>Als Einführung in <em>core.logic</em> kann ich folgenden Artikel aus dem assoziierten Wiki empfehlen: 
-https://github.com/clojure/core.logic/wiki/A-Core.logic-Primer. Über die Basics des Relational Programming hinaus 
-hat <em>core.logic</em> folgende Features (Stand Feb 2013): Constraint Logic Programming (CLP), 
-Tabling, Nominal Logic Programming, Support for Definite Clause Grammars. Mehr drüber erfährt man 
-ebenfalls im <a href="https://github.com/clojure/core.logic/wiki/Features">wiki</a>.</p>
+<a href="https://github.com/clojure/core.logic/wiki/A-Core.logic-Primer">A core.logic Primer</a>. Hier nun Kurz-Beschreibungen
+der einzelnen Features von <em>core.logic</em>:</p>
 
 <h2>Relational Programming</h2>
 
@@ -36,6 +36,18 @@ ebenfalls im <a href="https://github.com/clojure/core.logic/wiki/Features">wiki<
 ==, fresh, conde.</p>
 
 <h3>==</h3>
+
+<p>In der Logik-Programmierung werden Assignment und Equality-Test durch die sogenannte Unification
+ausgeführt. Die zugeordnete Operation nennt sich <em>unify</em> und wird durch <code>==</code> symbolisiert.
+Unify ist eine Relation und gibt bei Erfolg <code>success</code>, ansonsten <code>fail</code>.</p>
+
+
+
+ == is a relation; it returns an successful goal if unification is successful, otherwise an unsuccessful goal. 
+
+In logic programming, assignment and equality tests are performed by unification.
+
+Unification is represented by the macro clojure.core.logic.minikanren/==, and is pronounced "unify". 
 
 <p>tbd.</p>
 

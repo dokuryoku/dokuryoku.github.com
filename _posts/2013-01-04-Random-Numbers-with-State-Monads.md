@@ -52,7 +52,7 @@ Für eine Sequenz von Zufallszahlen kann man Mittelwert und Varianz wie folgt be
 Diese Funktionen haben noch nichts mit State-Monads zu tun. Die Funktion
 `rng` hat aber Eigenschaften, welche die näherungsweise Erzeugung von normalverteilten Zahlen mit
 Mittelwert 0 und Standardabweichung 1 erlauben. Mit Hilfe von State-Monads kann man das in eleganter Weise 
-zu tun, indem man 12er-Tupel aus einem mit `rng` erzeugten Zahlenstrom bildet und deren Mittelwert berechnet.
+tun, indem man 12er-Tupel aus einem mit `rng` erzeugten Zahlenstrom bildet und deren Mittelwert berechnet.
 
 {% highlight clojure %}
 (def gaussian
