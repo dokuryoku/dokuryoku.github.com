@@ -28,9 +28,8 @@ eine Spinne mit sich bewegenden Beinen.</p>
 
 <script src="https://gist.github.com/dokuryoku/5559925.js?file=abstractions.clj"></script>
 
-<p>Oscillator definiert die mit einem oszillierenden Objekt assoziierte Logik. Die Wesentlichen
-Eigenschaften sind: angle und amplitude mit jeweils x und y. Die Geschwindigkeit der bewegten
-Objekte wird zur Winkelgeschwindigkeit.</p>
+<p>Oscillator definiert ein sich bewegendes Objekt mit angle (Radians) und amplitude jeweils für 
+x und y. In <code>draw</code> wird die geradlinige Bewegung in eine elliptische Bahn umgerechnet.</p>
 
 <script src="https://gist.github.com/dokuryoku/5559925.js?file=oscillator.clj"></script>
 
