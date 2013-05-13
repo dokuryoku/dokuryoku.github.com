@@ -4,7 +4,7 @@ description: "Beispiele für die computergestützte Simulation natürlicher Vorg
 title: "Simulation natürlicher Vorgänge - Oscillating Objects"
 ---
 
-<p>Hier ein drittes Beispiel aus dem Buch <a href="http://natureofcode.com/book">The Nature of Code</a> 
+<p>Hier ein viertes Beispiel aus dem Buch <a href="http://natureofcode.com/book">The Nature of Code</a> 
 von Daniel Shiffman:</p>
 
 <h2>Oscillating Objects</h2>
@@ -21,19 +21,21 @@ Hier ein Screencast:</p>
 <p/>
 
 <p>Das Beispiel verwendet Trigonometrie, um eine Anzahl zufällig oszillierender Objekte, 
-die mit einem Mittelpunkt verbunden sind, darzustellen.</p>
+die mit einem Mittelpunkt verbunden sind, darzustellen. Das Ganze sieht ein wenig aus, wie 
+eine Spinne mit sich bewegenden Beinen.</p>
 
 <p>Die verwendeten Abstraktionen:</p>
 
 <script src="https://gist.github.com/dokuryoku/5559925.js?file=abstractions.clj"></script>
 
-<p>Oscillator:</p>
+<p>Oscillator definiert die mit einem oszillierenden Objekt assoziierte Logik. Die Wesentlichen
+Eigenschaften sind: angle und amplitude mit jeweils x und y. Die Geschwindigkeit der bewegten
+Objekte wird zur Winkelgeschwindigkeit.</p>
 
 <script src="https://gist.github.com/dokuryoku/5559925.js?file=oscillator.clj"></script>
 
-<p>Processing-Main definiert den Sketch-State (<code>particle-system</code>) sowie die Fortschreibung des State im Draw-Loop. Außerdem 
-sind im Processing-Main die durch Quil/Processing via Callback aufgerufenen Funktionen für das Display-Setup, 
-den Draw-Loop implementiert.</p>
+<p>Processing-Main definiert wie üblich den Sketch-State sowie Initialisierung und Fortschreibung 
+des State im Draw-Loop.</p>
 
 <script src="https://gist.github.com/dokuryoku/5559925.js?file=sketch.clj"></script>
 
